@@ -1,0 +1,30 @@
+footer {
+    display: block;
+    height: fit-content;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+    
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    margin-top: 2vh;
+}
+.socialMedia li a img {
+    width: 50px;
+    height: auto;
+}
+
+.socialMedia li {
+    list-style-type: none;
+    margin-top: 2vh;
+}
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+

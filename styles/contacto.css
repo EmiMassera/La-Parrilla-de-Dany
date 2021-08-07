@@ -1,0 +1,50 @@
+/* #########################-CONTACTO-############################## */
+#main-contact {
+    height: 135vh;
+}
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactform fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+
+fieldset legend {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    word-spacing: 10px;
+    color: #F5F3F4;
+}
+
+fieldset {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #F5F3F4;
+
+}
+.novedades {
+    display: inline;
+    width: 50vw;
+}
+
+textarea {
+    resize: none;
+}
+input[type="chackbox"] {
+    display: block;
+
+}
+input[type="reset"] {
+    margin: 15px;
+}
+input[type="submit"] {
+    margin: 15px;
+}

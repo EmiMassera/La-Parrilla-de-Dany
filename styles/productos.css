@@ -1,0 +1,188 @@
+/* #################-PRODUCTOS-########################## */
+#main-products {
+    height: 330vh;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100vw;
+    height: 320vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    padding: 0 3vw 0 3vw;
+}
+.products div {
+    border: 1px solid #161A1D;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.6s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+
+.products div p {
+    font-family: "Bona Nova", "Serif";
+}
+
+.products div:hover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 77px 0px rgba(0,0,0,0.61) inset;
+
+    transition: all 0.6s;
+
+
+}
+
+
+.item1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/salsa-criolla.jpg);
+    height: 25vh;
+}
+.item2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/chorizos.jpg);
+    height: 25vh;
+}
+.item3 { 
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/lechon.jpg); 
+    height: 51vh;
+}
+.item4 { 
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/vacio.jpg);
+    height: 35vh; 
+}
+.item5 { 
+    grid-area: 4 / 1 / 6 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/cimg6732.jpg); 
+    height: 51vh;
+}
+.item6 { 
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/ensalada-rusa.jpg);
+    height: 25vh;
+}
+.item7 { 
+    grid-area: 5 / 2 / 6 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/entraña.jpg);
+    height: 25vh;
+ }
+.item8 { 
+    grid-area: 6 / 1 / 7 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/tapadeasado.jpg);
+    height: 35vh; 
+ }
+.item9 { 
+    grid-area: 7 / 1 / 8 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/ensalada-lechugatomate.jpg);
+    height: 25vh;
+ }
+.item10 { 
+    grid-area: 8 / 1 / 9 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/matambre.jpg);
+    height: 25vh;
+ }
+.item11 { 
+    grid-area: 7 / 2 / 9 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/combo3_image.jpg); 
+    height: 51vh;
+ }
+.item12 { 
+    grid-area: 9 / 1 / 10 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/costillascerdo.jpg);
+    height: 35vh; 
+ }
+.item13 { 
+    grid-area: 10 / 1 / 12 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/bife-chorizo.jpg);
+    height: 52vh;
+ }
+.item14 { 
+    grid-area: 10 / 2 / 11 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/chinchulines.jpg);
+    height: 25vh;
+ }
+.item15 { 
+    grid-area: 11 / 2 / 12 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(../assets/costillas.jpg);
+    height: 25vh;
+ }
+
+.products div p {
+    color: white;
+    font-weight: 500;
+    font-size: 3rem;
+}

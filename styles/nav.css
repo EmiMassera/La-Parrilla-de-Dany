@@ -1,0 +1,223 @@
+/* TAMAÑO DEL HEADER DEL 100% DE LA PANTALLA, IMAGEN DE FONDO */
+.header {
+    height: 100vh;
+    width: auto;
+    background-image: url(../assets/imagen_header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@keyframes puff-in-center {
+    0% {
+      transform: scale(2);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+#productos {
+     background-image: url(../assets/asado2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#combos {
+    background-image: url(../assets/asado3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#contacto {
+    background-image: url(../assets/asado4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sobrenosotros {
+    background-image: url(../assets/asado5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* NAV */
+.header__nav {
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba( 0, 0, 0, 0.55 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    z-index: 100;
+}
+
+.nav__list {
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* CAMBIAR TAMAÑO LOGO */
+.header__nav a img {
+    width: 17vw;
+    margin-left: 3vw;
+    animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* INLINE AL UL */
+.header__nav .nav__list {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    /* font-size: 2,5vh; */
+}
+
+/* INLINE A LOS LI DE UL */
+.header__nav .nav__list li {
+    display: inline-block;
+}
+
+/*  QUITAR DECORACION A ENLACES, CAMBIAR COLOR Y ESTILO DE FUENTE */
+.nav__list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+/* CAMBIAR TAMAÑO A LOGO EN HEADER INDEX */
+.header__logo img {
+    height: 50vh;
+    width: auto;
+    overflow: hidden;
+}
+
+
+.header__logo {
+    overflow: hidden;
+    animation: puff-in-center 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+
+/* TEXTO DE HEADER EN BLANCO Y FONTS WEIGHTS*/
+.header__logo h1 i {
+    color: white;
+    font-family: 'Bona Nova', serif;
+    font-weight: 300;
+    text-shadow: 1px 2px 20px #000000;
+    letter-spacing: 3px;
+    font-size: 4vw;
+}
+.header__logo h1 b {
+    color: white;
+    font-family: 'Bona Nova', serif;
+    font-weight: 800;
+    text-shadow: 1px 2px 20px #000000;
+    letter-spacing: 3px;
+    font-size: 4vw;
+}
+
+  
+
+.header__logo{
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+  /* MEDIA QUERIES */
+
+  @media only screen and (max-width: 600px) {
+      .header__logo img {
+
+            height: 18rem;
+            width: auto;
+            overflow: hidden;
+        
+      }
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .header__logo h1 i {
+        color: white;
+        font-family: 'Bona Nova', serif;
+        font-weight: 300;
+        text-shadow: 1px 2px 20px #000000;
+        letter-spacing: 3px;
+        font-size: 2rem;
+    }
+    .header__logo h1 b {
+        color: white;
+        font-family: 'Bona Nova', serif;
+        font-weight: 800;
+        text-shadow: 1px 2px 20px #000000;
+        letter-spacing: 3px;
+        font-size: 2rem;
+    }
+
+    /* .header__nav {
+        height: 10%;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background: rgba( 0, 0, 0, 0.55 );
+        backdrop-filter: blur( 10.5px );
+        -webkit-backdrop-filter: blur( 10.5px );
+        z-index: 100;
+    } */
+
+    .header__nav a img {
+        width: 10rem;
+        margin-left: 2.5vw;
+        z-index: 101;
+    }
+
+    .nav__list {
+        display: none;
+        width: 0px;
+    }
+    .nav__list li {
+        display: none;
+        width: 0px;
+    }
+    .nav__list li a{
+        display: none;
+        width: 0px;
+    }
+  }

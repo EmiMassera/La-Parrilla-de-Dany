@@ -1,0 +1,268 @@
+ /* PRIMERA SECCION DEL MAIN DE INDEX */
+
+#main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.section__first {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+    padding: 15px 0 15px;
+    background-color: #161A1D;
+    width: fit-content;
+    border-radius: 15px;
+    transition: all 0.3s;
+    animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.section__first:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+    box-shadow: 10px 10px 102px -36px rgba(0,0,0,0.65);
+}
+/* IMAGEN DE LA PRIMERA SECCION */
+.intro .image_sectionFirst {
+    width: 100vh;
+    height: auto;
+    border-radius: 15px;
+}
+
+.section__first div {
+    padding: 1vw;
+}
+/* DIV DONDE SE ENCUENTRA EL H2 Y EL P */
+.content {
+    width: 35vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #F5F3F4;
+    margin: 0;
+} 
+/* H2 DE LA PRIMERA SECCION */
+.content .title {
+    margin: 0;
+    font-size: 7vh;
+    width: fit-content;
+    
+}
+
+.section__first .text {
+    color: #F5F3F4;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* ##################COMIENZO DE LA 2DA SECCION DEL MAIN INDEX################################## */
+
+ .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    height: 155vh;
+} 
+
+.section2__title {
+    display: block;
+    text-align: center;
+    font-size: 9vh;
+    color: #F5F3F4;
+    overflow: hidden;
+}
+
+.section2 div div img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: auto;
+    display: block;
+    margin-bottom: 3vh;
+    
+} 
+
+.section2 div div:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+    box-shadow: 10px 10px 102px -36px rgba(0,0,0,0.65);
+}
+.section2 div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 55vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #161A1D;
+    padding: 5px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.section2__icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-rows: 1fr;
+    gap: 0 2%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "icon1 icon2 icon3"
+      "icon4 icon5 icon6";
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon1 { grid-area: icon1; }
+  
+  .icon2 { grid-area: icon2; }
+  
+  .icon3 { grid-area: icon3; }
+  
+  .icon4 { grid-area: icon4; }
+  
+  .icon5 { grid-area: icon5; }
+  
+  .icon6 { grid-area: icon6; }
+
+
+  /* MEDIA QUERIES */
+
+  @media only screen and (max-width: 600px) {
+        
+        .section__first {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            height: max-content;
+            margin-top: 5vh;
+        }
+
+        .intro .image_sectionFirst {
+            width: 100vh;
+            height: auto;
+            border-radius: 15px;
+        }
+        
+        .section__first .text {
+            color: #F5F3F4;
+            text-align: center;
+            font-size: 1rem;
+
+        }
+        
+        .content {
+            width: fit-content ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            color: #F5F3F4;
+            margin: 0;
+        } 
+        
+        .content .title {
+            margin: 0;
+            font-size: 2rem;
+            width: fit-content;
+            
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            height: 250vh;
+        } 
+
+          .section2__icons {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-auto-rows: 1fr;
+            gap: 1% 1%;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "icon1"
+              "icon2"
+              "icon3"
+              "icon4"
+              "icon5"
+              "icon6";
+            width: 100%;
+            height: 100%;
+            margin-top: 5%;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .section2 div div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 90vw;
+            height: 35vh;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 25px;
+            color: #FFFFFF;
+            background-color: #161A1D;
+            padding: 5px;
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .section2 div div img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8rem;
+            height: auto;
+            display: block;
+            margin-bottom: 3vh;
+            
+        } 
+        
+
+  } 
+      
+
+
+
+  /* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {}
+Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {}
+ Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {}
+ Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {}
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {}   */

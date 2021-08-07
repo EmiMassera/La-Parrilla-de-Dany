@@ -1,0 +1,50 @@
+ /* .CSS DEL HEADER/NAV DE LAS PÁGINAS  */
+ @import url(nav.css);
+
+ /* .CSS DEL FOOTER DE LAS PAGINAS */
+
+ @import url(footer.css);
+ 
+ /* .CSS DEL INDEX */
+
+ @import url(index.css);
+
+ /* .CSS DE COMBOS */
+
+ @import url(combos.css);
+ 
+ /* .CSS DE PRODUCTOS */
+
+@import url(productos.css);
+
+/* .CSS DE CONTACTO */
+
+@import url(contacto.css);
+
+/* .CSS DE SOBRENOSOTROS */
+
+@import url(sobrenosotros.css);
+
+ /* SELECTORES GENERALES */
+ * {
+    font-family: 'Hahmlet', sans-serif;
+    overflow-x: hidden;
+    
+ }
+
+ h1, h2 {
+    font-family: 'Bona Nova', serif;
+    font-weight: 600;
+ }
+
+ main {
+    background-color: #0B090A;
+}
+
+  
+
+
+
+
+
+
