@@ -38,10 +38,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 77px 0px rgba(0,0,0,0.61) inset;
-
     transition: all 0.6s;
-
-
 }
 
 
@@ -185,4 +182,20 @@
     color: white;
     font-weight: 500;
     font-size: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px)  {
+    .products div p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .products .item9 p {
+        font-size: 1.5rem;
+    }
+    .products .item14 p {
+        font-size: 1.5rem;
+    }
 }

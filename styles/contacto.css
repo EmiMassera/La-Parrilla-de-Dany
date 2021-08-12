@@ -10,7 +10,6 @@
 .contactform fieldset {
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
 }
 
 
@@ -47,4 +46,20 @@ input[type="reset"] {
 }
 input[type="submit"] {
     margin: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    fieldset {
+        width: 80vw;
+        overflow: hidden;
+    }
+    .contactform {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        overflow: hidden;
+    }
+    #main.contact {
+        height: max-content;
+    }
+
 }

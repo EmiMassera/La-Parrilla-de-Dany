@@ -69,3 +69,40 @@
 
     color: #F5F3F4;
 }
+
+@media only screen and (max-width: 600px) {
+    .aboutus {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .aboutus img {
+        height: 13rem;
+        width: auto;
+    }
+    .section__aboutus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: max-content;
+        margin-bottom: 5vh ;
+    }
+
+    #main-aboutus {
+        height: max-content;
+    }
+
+    .aboutus__text .p {
+        width: fit-content;
+        text-align: center;
+        padding: 3%;
+    }
+    .ubication {
+        width: 90vw;
+    }
+    .ubication iframe {
+        height: 22rem;
+        width: 19rem;
+    }
+}

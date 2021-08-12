@@ -146,7 +146,9 @@
     font-size: 4vw;
 }
 
-  
+.menu__responsive {
+    display: none;
+}
 
 .header__logo{
     display: inline-block;
@@ -159,18 +161,12 @@
   /* MEDIA QUERIES */
 
   @media only screen and (max-width: 600px) {
-      .header__logo img {
 
-            height: 18rem;
-            width: auto;
-            overflow: hidden;
-        
-      }
+    .header__logo img {
+        height: 18rem;
+        width: auto;
+        overflow: hidden;
   }
-
-
-
-  @media only screen and (max-width: 600px) {
     .header__logo h1 i {
         color: white;
         font-family: 'Bona Nova', serif;
@@ -187,37 +183,27 @@
         letter-spacing: 3px;
         font-size: 2rem;
     }
-
-    /* .header__nav {
-        height: 10%;
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        background: rgba( 0, 0, 0, 0.55 );
-        backdrop-filter: blur( 10.5px );
-        -webkit-backdrop-filter: blur( 10.5px );
-        z-index: 100;
-    } */
-
     .header__nav a img {
         width: 10rem;
         margin-left: 2.5vw;
         z-index: 101;
     }
 
-    .nav__list {
+    .header__nav .nav__list, .nav__list li, .nav__list li a {
         display: none;
-        width: 0px;
     }
-    .nav__list li {
+
+    .menu__responsive {
+        display: inline-block;
+        height: min-content;
+        margin-right: .5rem;
+    }
+    .menu__responsive label img {
+        height: 3rem;
+        width: auto;
+    }
+    .menu__responsive input {
         display: none;
-        width: 0px;
     }
-    .nav__list li a{
-        display: none;
-        width: 0px;
-    }
+    
   }
