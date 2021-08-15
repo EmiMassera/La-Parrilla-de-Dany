@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - La Parrilla de Dany</title>
     <link rel="icon" href="../assets/logo_nav_white.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,30 +19,23 @@
 <body class="bodyprod">
     <header class="header" id="productos"> 
             
-        <nav class="header__nav">
-            <a href="../index.html" ><img src="../assets/logo_h_280.png" alt="Logo" ></a> 
-            <div class="menu__responsive">
-                <label for="menu"><img src="../assets/menu.svg" alt="menu"></label>
-                <input type="checkbox" name="menu" id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/logo_h_280.png" alt="La Parrilla de Dany">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Inicio</a>
+                <a class="nav-item nav-link active" href="productos.html">Productos</a>
+                <a class="nav-item nav-link" href="combos.html">Combos</a>
+                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-item nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+              </div>
             </div>
-            <ul class="nav__list">
-                <li>
-                    <a href="../index.html">Inicio</a> 
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a> 
-                </li>
-                <li> 
-                    <a href="combos.html">Combos</a> 
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a> 
-                </li>
-                <li>
-                    <a href="sobrenosotros.html">Sobre Nosotros</a> 
-                </li>
-            </ul>
-        </nav>
+          </nav>
         <div class="header__logo">
     <!-- <img src="../assets/logo_nav_white.png" alt="La Parrilla Quincho" class="imgintro"> -->
     <h1> 

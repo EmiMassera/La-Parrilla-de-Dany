@@ -7,7 +7,6 @@
     flex-direction: column;
     height: max-content;
 }
-
 .section__first {
     display: flex;
     justify-content: center;
