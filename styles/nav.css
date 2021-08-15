@@ -95,8 +95,17 @@
 div#navbarNavAltMarkup {
     flex-grow: 0;
 }
+.collapse .navbar-collapse {
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#navbarNavAltMarkup {
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
-.nav__list {
+.navbar-toggler {
+    animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.navbar_nav .navbar-toggler-icon {
     animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 /* CAMBIAR TAMAÑO LOGO */
