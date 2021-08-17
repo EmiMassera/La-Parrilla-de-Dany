@@ -1,65 +1,33 @@
 /* #########################-CONTACTO-############################## */
-#main-contact {
-    height: 135vh;
+.form {
+    width: 65vw;
+    margin: 3vh 0 3vh 0;
 }
-.contactform {
+
+#main-contact {
+    color: white;
+    height: max-content;
+    padding: 3vh 0 3vh 0;
+}
+.form-group label {
+    margin: 2rem 0 0 0;
+}
+.btn-primary {
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: auto;
+}
+.section-contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contactform fieldset {
-    display: flex;
-    flex-direction: column;
-}
-
-
-fieldset legend {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 800;
-    word-spacing: 10px;
-    color: #F5F3F4;
-}
-
-fieldset {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    color: #F5F3F4;
-
-}
-.novedades {
-    display: inline;
-    width: 50vw;
-}
-
-textarea {
-    resize: none;
-}
-input[type="chackbox"] {
-    display: block;
-
-}
-input[type="reset"] {
-    margin: 15px;
-}
-input[type="submit"] {
-    margin: 15px;
-}
-
 @media only screen and (max-width: 600px) {
-    fieldset {
-        width: 80vw;
-        overflow: hidden;
-    }
-    .contactform {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        overflow: hidden;
-    }
-    #main.contact {
-        height: max-content;
+    .form {
+        width: 95vw;
     }
 
 }
