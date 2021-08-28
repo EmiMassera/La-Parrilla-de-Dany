@@ -1,3 +1,5 @@
+@import "_vars.scss";
+
 /* #########################-CONTACTO-############################## */
 .form {
     width: 65vw;
@@ -5,29 +7,42 @@
 }
 
 #main-contact {
-    color: white;
+    color: $letter-color;
     height: max-content;
     padding: 3vh 0 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.form-group label {
-    margin: 2rem 0 0 0;
+.form-group {
+    label {
+        margin: 2rem 0 0 0;
+    }
 }
 .btn-primary {
     margin-top: 2rem;
 }
 
-section h2 {
-    font-size: auto;
+section {
+    h2 {
+        font-size: auto;
+    }
 }
 .section-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    background-color: $target-color;
+    border-radius: 15px;
 }
 @media only screen and (max-width: 600px) {
     .form {
-        width: 95vw;
+        width: 80vw;
     }
 
+    .section-contact {
+        width: 90vw;
+    }
 }

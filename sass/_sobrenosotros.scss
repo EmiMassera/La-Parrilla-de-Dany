@@ -1,3 +1,5 @@
+@import "_vars.scss";
+
 /* #####################-SOBRE NOSOTROS-########################### */
 
 #main-aboutus {
@@ -18,24 +20,24 @@
     margin-top: 10vh;
     flex-wrap: wrap;
     padding: 15px 0 15px;
-    background-color: #161A1D;
+    background-color: $target-color;
     width: 90vw;
     border-radius: 015px;
 
 }
 
-
-
-.aboutus img {
-    width: 45vw;
-    height: auto;
-    border: 5px solid black;
-    border-radius: 15px;
+.aboutus {
+    img {
+        width: 45vw;
+        height: auto;
+        border: 5px solid black;
+        border-radius: 15px;
+    }
 }
 
 .aboutus__text {
     text-align: center;
-    color: #F5F3F4;
+    color: $letter-color;
 
 }
 
@@ -44,8 +46,10 @@
     text-align: justify;
 }
 
-.aboutus__text h2 {
-    font-size: 50px;
+.aboutus__text {
+    h2 {
+        font-size: 50px;
+    }
 }
 
 .ubication {
@@ -55,7 +59,7 @@
     justify-content: center;
     width: fit-content;
     padding: 15px;
-    background-color: #161A1D;
+    background-color: $target-color;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -66,8 +70,7 @@
 
 .ubication__title {
     font-size: 50px;
-
-    color: #F5F3F4;
+    color: $letter-color;
 }
 
 @media only screen and (max-width: 600px) {
@@ -76,9 +79,11 @@
         width: 90vw;
     }
 
-    .aboutus img {
-        height: 13rem;
-        width: auto;
+    .aboutus {
+        img {
+            height: 13rem;
+            width: auto;
+        }
     }
     .section__aboutus {
         display: flex;
@@ -101,8 +106,10 @@
     .ubication {
         width: 90vw;
     }
-    .ubication iframe {
-        height: 22rem;
-        width: 19rem;
+    .ubication {
+        iframe {
+            height: 22rem;
+            width: 19rem;
+        }
     }
 }

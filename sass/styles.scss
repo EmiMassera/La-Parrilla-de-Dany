@@ -1,0 +1,53 @@
+ /* .CSS DEL HEADER/NAV DE LAS PÁGINAS  */
+ @import "nav.scss";
+
+ /* .CSS DEL FOOTER DE LAS PAGINAS */
+
+ @import "_footer.scss";
+ 
+ /* .CSS DEL INDEX */
+
+ @import "_index.scss";
+
+ /* .CSS DE COMBOS */
+
+ @import "_combos.scss";
+ 
+ /* .CSS DE PRODUCTOS */
+
+@import "_productos.scss";
+
+/* .CSS DE CONTACTO */
+
+@import "_contacto.scss";
+
+/* .CSS DE SOBRENOSOTROS */
+
+@import "_sobrenosotros.scss";
+
+// VARIABLES 
+@import "_vars.scss";
+
+ /* SELECTORES GENERALES */
+ * {
+    font-family: $general-font;
+    overflow-x: hidden;
+    
+ }
+
+ h1, h2 {
+    font-family: $title-font;
+    font-weight: 600;
+ }
+
+ main {
+    background-color:$background-color;
+}
+
+  
+
+
+
+
+
+
