@@ -19,7 +19,6 @@
 }
 .products {
     div {
-        border: 1px solid $target-color;
         border-radius: 15px;
         background-position: center;
         background-size: cover;
@@ -33,9 +32,20 @@
 }
 
 .products {
+   
     div {
+        display: flex;
+        justify-content: space-evenly;
+        transition: all 0.6s;
         p {
             font-family: $title-font;
+        }
+        button {
+            display: none;
+            margin: 0;
+        }
+        span {
+            display: none;
         }
     }
 }
@@ -50,6 +60,20 @@
     }
 }
 
+.products {
+    div:hover {
+        transition: all 0.6s;
+        p {
+            display: none;
+        }
+        button {
+            display: inline-block;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+}
 
 .item1 { 
     grid-area: 1 / 1 / 2 / 2; 
