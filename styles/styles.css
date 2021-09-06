@@ -37,7 +37,8 @@
 #combos {
   background-image: url(../assets/asado3.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  height: 101vh; }
 
 #contacto {
   background-image: url(../assets/asado4.jpg);
@@ -219,6 +220,10 @@ footer p {
   margin-top: 40px;
   color: white; }
 
+.socialMedia li a img:hover {
+  width: 60px;
+  height: auto; }
+
 /* .CSS DEL INDEX */
 /* PRIMERA SECCION DEL MAIN DE INDEX */
 #main-index {
@@ -237,8 +242,7 @@ footer p {
   background-color: #161A1D;
   width: fit-content;
   border-radius: 15px;
-  transition: all 0.3s;
-  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  transition: all 0.3s; }
 
 .section__first:hover {
   transform: scale(1.03);
@@ -406,7 +410,8 @@ footer p {
     height: 100%;
     margin-top: 5%;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: red; }
   .section2 div div {
     display: flex;
     flex-direction: column;

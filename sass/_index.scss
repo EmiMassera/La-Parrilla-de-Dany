@@ -20,9 +20,9 @@
     width: fit-content;
     border-radius: 15px;
     transition: all 0.3s;
-    animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
+}
+  
 .section__first:hover {
     transform: scale(1.03);
     transition: all 0.3s;

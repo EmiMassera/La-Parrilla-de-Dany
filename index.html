@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -54,7 +56,7 @@
     
     
     <main id="main-index">
-        <section class="section__first">   <!-- Introducción a la página, que es lo que ofrecemos.-->
+        <section class="section__first wow animate__animated animate__backInDown">   <!-- Introducción a la página, que es lo que ofrecemos.-->
             <div class="intro">
                 <img src="assets/nuestroservicio_image.jpg" alt="Nuestro Servicio" class="image_sectionFirst"> 
             </div>
@@ -71,7 +73,7 @@
         <section class="section2">
             <h2 class="section2__title">Te ofrecemos:</h2> 
                 <!-- Iconos con descripcion debajo. -->
-            <div class="section2__icons">
+            <div class="section2__icons wow animate__animated animate__zoomIn">
                 <div class="icon1"><img src="assets/cow.svg" alt="Carne">La Mejor Carne</div>
                 <div class="icon2"><img src="assets/take-away.svg" alt="imagen">Directo a la puerta de tu casa</div>
                 <div class="icon3"><img src="assets/hand.svg" alt="imagen">Precio accesible</div>
@@ -107,5 +109,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script> new WOW().init(); </script>
+        
+       
+
 </body>
 </html>

@@ -15,6 +15,8 @@
     <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/wow.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -49,23 +51,23 @@
         <section class="combos">
             <!-- Sección donde se mostraran 4 tipos de variedades de combos, incluyen imagen, nombre, descripción y precio. -->
             
-            <div class="combo1">
+            <div class="combo1 wow animate__animated animate__slideInLeft">
                 <h2>Parrillada para 5 personas</h2>
                 <p>Matambre de vaca, costillas de vaca, 5 chorizos parrilleros, ensalada mixta.</p>
                 <p>$1500</p>
             </div>
         
-            <div class="combo2">               
+            <div class="combo2 wow animate__animated animate__slideInRight">               
                 <h2>Asado con achuras para 4 personas</h2>
                 <p>Vacío, Chinchulines, Mollejas, Tripa Gorda.</p>
                 <p>$1250</p>
             </div>
-            <div class="combo3">           
+            <div class="combo3 wow animate__animated animate__slideInLeft">           
                 <h2>Pollo con verduras para 3 personas</h2>
                 <p>Pollo entero asado, morron con huevo a la parrilla, cebolla, calabaza y batata asada.</p>
                 <p>$1000</p>
             </div>
-            <div class="combo4">                
+            <div class="combo4 wow animate__animated animate__slideInRight">                
                 <h2>Combo lechón</h2>
                 <p>Lechón asado con ensalada rusa.</p>
                 <p>$2000</p>
@@ -96,5 +98,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script> new WOW().init(); </script>
 </body>
 </html>
