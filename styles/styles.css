@@ -701,7 +701,7 @@ footer p {
 /* .CSS DE CONTACTO */
 /* #########################-CONTACTO-############################## */
 .form {
-  width: 65vw;
+  width: 85vw;
   margin: 3vh 0 3vh 0; }
 
 #main-contact {
@@ -710,7 +710,8 @@ footer p {
   padding: 3vh 0 3vh 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .form-group label {
   margin: 2rem 0 0 0; }
@@ -719,27 +720,60 @@ footer p {
   margin-top: 2rem; }
 
 section h2 {
-  font-size: auto; }
+  font-size: auto;
+  margin-top: 2%; }
 
 .section-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 90vw;
   background-color: #161A1D;
   border-radius: 15px; }
+
+.ubication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  padding: 15px;
+  background-color: #161A1D;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 10vh; }
+  .ubication iframe {
+    width: 85vw;
+    border-radius: 15px;
+    height: 80vh; }
+
+.ubication__title {
+  font-size: 50px;
+  color: #F5F3F4; }
 
 @media only screen and (max-width: 600px) {
   .form {
     width: 80vw; }
   .section-contact {
-    width: 90vw; } }
+    width: 90vw; }
+  .ubication {
+    width: 90vw; }
+  .ubication iframe {
+    height: 22rem;
+    width: 19rem; } }
 
 /* .CSS DE SOBRENOSOTROS */
 /* #####################-SOBRE NOSOTROS-########################### */
 #main-aboutus {
-  height: 205vh; }
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .section__aboutus {
   display: flex;
@@ -752,17 +786,17 @@ section h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10vh;
   flex-wrap: wrap;
   padding: 15px 0 15px;
   background-color: #161A1D;
   width: 90vw;
-  border-radius: 015px; }
+  border-radius: 015px;
+  margin-bottom: 5vh;
+  margin-top: 10vh; }
 
 .aboutus img {
   width: 45vw;
   height: auto;
-  border: 5px solid black;
   border-radius: 15px; }
 
 .aboutus__text {
@@ -776,32 +810,35 @@ section h2 {
 .aboutus__text h2 {
   font-size: 50px; }
 
-.ubication {
+.section__carousel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: fit-content;
-  padding: 15px;
+  align-items: center;
+  width: 90vw;
+  height: 85vh;
   background-color: #161A1D;
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  margin-top: 10vh; }
+  margin-bottom: 10vh; }
+  .section__carousel div {
+    width: 85vw;
+    height: 75vh;
+    overflow: hidden; }
+  .section__carousel .carousel-inner {
+    border-radius: 15px;
+    overflow: hidden; }
 
-.ubication__title {
-  font-size: 50px;
-  color: #F5F3F4; }
+.imagen_slider {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; }
 
 @media only screen and (max-width: 600px) {
   .aboutus {
     flex-direction: column;
     width: 90vw; }
   .aboutus img {
-    height: 13rem;
-    width: auto; }
+    height: auto;
+    width: 85vw; }
   .section__aboutus {
     display: flex;
     justify-content: center;
@@ -815,11 +852,34 @@ section h2 {
     width: fit-content;
     text-align: center;
     padding: 3%; }
-  .ubication {
-    width: 90vw; }
-  .ubication iframe {
-    height: 22rem;
-    width: 19rem; } }
+  .section__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 13rem;
+    background-color: #161A1D;
+    border-radius: 15px;
+    margin-bottom: 10vh; }
+    .section__carousel div {
+      width: 85vw;
+      overflow: hidden; }
+      .section__carousel div div div img {
+        height: 12rem; }
+    .section__carousel .carousel-inner {
+      border-radius: 15px;
+      overflow: hidden;
+      height: fit-content; }
+    .section__carousel .carousel-item.active {
+      height: 12rem; }
+    .section__carousel .carousel-slider {
+      height: 12rem; }
+    .section__carousel .carousel .slide {
+      height: 12rem; }
+    .section__carousel #carouselExampleIndicators {
+      height: 12rem; }
+    .section__carousel .d-block .w-100 {
+      height: 30vh; } }
 
 /* SELECTORES GENERALES */
 * {
