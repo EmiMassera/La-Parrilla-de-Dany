@@ -226,9 +226,16 @@
 @media only screen and (max-width: 600px)  {
     .products {
         div {
+            display: flex;
+            flex-direction: column;
             p {
                 font-size: 2rem;
                 text-align: center;
+            }
+            button {
+                width: 40vw;
+                height: auto;
+                font-size: .8rem;
             }
         }
     }

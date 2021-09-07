@@ -683,9 +683,16 @@ footer p {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
-  .products div p {
-    font-size: 2rem;
-    text-align: center; }
+  .products div {
+    display: flex;
+    flex-direction: column; }
+    .products div p {
+      font-size: 2rem;
+      text-align: center; }
+    .products div button {
+      width: 40vw;
+      height: auto;
+      font-size: .8rem; }
   .products .item9 p {
     font-size: 1.5rem; }
   .products .item14 p {
