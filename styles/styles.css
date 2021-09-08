@@ -819,18 +819,13 @@ section h2 {
   background-color: #161A1D;
   border-radius: 15px;
   margin-bottom: 10vh; }
-  .section__carousel div {
-    width: 85vw;
+  .section__carousel .d-block {
     height: 75vh;
-    overflow: hidden; }
-  .section__carousel .carousel-inner {
-    border-radius: 15px;
-    overflow: hidden; }
-
-.imagen_slider {
-  overflow: hidden;
-  object-fit: cover;
-  object-position: center; }
+    width: 85vw;
+    object-fit: cover;
+    border-radius: 15px; }
+  .section__carousel .carousel-item {
+    object-fit: cover; }
 
 @media only screen and (max-width: 600px) {
   .aboutus {
@@ -857,29 +852,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     width: 90vw;
-    height: 13rem;
-    background-color: #161A1D;
-    border-radius: 15px;
-    margin-bottom: 10vh; }
-    .section__carousel div {
-      width: 85vw;
-      overflow: hidden; }
-      .section__carousel div div div img {
-        height: 12rem; }
-    .section__carousel .carousel-inner {
-      border-radius: 15px;
-      overflow: hidden;
-      height: fit-content; }
-    .section__carousel .carousel-item.active {
-      height: 12rem; }
-    .section__carousel .carousel-slider {
-      height: 12rem; }
-    .section__carousel .carousel .slide {
-      height: 12rem; }
-    .section__carousel #carouselExampleIndicators {
-      height: 12rem; }
-    .section__carousel .d-block .w-100 {
-      height: 30vh; } }
+    height: 80vh; } }
 
 /* SELECTORES GENERALES */
 * {

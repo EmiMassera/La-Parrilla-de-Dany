@@ -1,5 +1,11 @@
 @import "_vars.scss";
 
+
+
+
+
+
+
 /* #####################-SOBRE NOSOTROS-########################### */
 
 #main-aboutus {
@@ -65,21 +71,15 @@
     background-color: $target-color;
     border-radius: 15px;
     margin-bottom: 10vh;
-    div {
-        width: 85vw;
+    .d-block {
         height: 75vh;
-        overflow: hidden;
-    }
-    .carousel-inner {
+        width: 85vw;
+        object-fit: cover;
         border-radius: 15px;
-        overflow: hidden;
     }
-}
-
-.imagen_slider {
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
+    .carousel-item {
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,43 +117,6 @@
         justify-content: center;
         align-items: center;
         width: 90vw;
-        height: 13rem;
-        background-color: $target-color;
-        border-radius: 15px;
-        margin-bottom: 10vh;
-        div {
-            width: 85vw;
-            overflow: hidden;
-            div {
-                div {
-                    img {
-                        height: 12rem;
-                    }
-                }
-            }
-        }
-        .carousel-inner {
-            border-radius: 15px;
-            overflow: hidden;
-            height: fit-content;
-        }
-        .carousel-item.active {
-            height: 12rem;
-        }
-
-        .carousel-slider {
-            height: 12rem;
-        }
-        .carousel .slide {
-            height: 12rem;
-        }
-        #carouselExampleIndicators {
-            height: 12rem;
-        }
-
-        .d-block .w-100 {
-            height: 30vh;
-        }
-
-    }
+        height: 80vh;
+    } 
 }
