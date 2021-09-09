@@ -2,7 +2,7 @@
 
 /* #########################-CONTACTO-############################## */
 .form {
-    width: 65vw;
+    width: 85vw;
     margin: 3vh 0 3vh 0;
 }
 
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .form-group {
     label {
@@ -26,6 +27,7 @@
 section {
     h2 {
         font-size: auto;
+        margin-top: 2%;
     }
 }
 .section-contact {
@@ -33,10 +35,38 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 90vw;
     background-color: $target-color;
     border-radius: 15px;
+    
 }
+
+.ubication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    padding: 15px;
+    background-color: $target-color;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 10vh;
+    iframe {
+        width: 85vw;
+        border-radius: 15px;
+        height: 80vh;
+    }
+}
+
+.ubication__title {
+    font-size: 50px;
+    color: $letter-color;
+}
+
 @media only screen and (max-width: 600px) {
     .form {
         width: 80vw;
@@ -44,5 +74,14 @@ section {
 
     .section-contact {
         width: 90vw;
+    }
+    .ubication {
+        width: 90vw;
+    }
+    .ubication {
+        iframe {
+            height: 22rem;
+            width: 19rem;
+        }
     }
 }
