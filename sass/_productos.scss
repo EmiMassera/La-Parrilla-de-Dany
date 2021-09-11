@@ -220,7 +220,12 @@
         }
     }
 }
-
+.item9 {
+    overflow: hidden;
+    p {
+        font-size: 1.6rem;
+    }
+}
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px)  {
@@ -246,6 +251,22 @@
         }
     }
     .products .item14 {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+    .products .item9 {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .products .item9 {
         p {
             font-size: 1.5rem;
         }

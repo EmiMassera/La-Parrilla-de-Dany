@@ -250,12 +250,13 @@ footer {
 
 .section__first {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 95vw;
+  height: fit-content;
   margin-top: 15vh;
   flex-wrap: wrap;
   padding: 15px 0 15px;
   background-color: #161A1D;
-  width: fit-content;
   border-radius: 15px;
   transition: all 0.3s;
   align-items: center; }
@@ -265,36 +266,45 @@ footer {
   transition: all 0.3s;
   box-shadow: 10px 10px 102px -36px rgba(0, 0, 0, 0.65); }
 
-.intro video {
-  width: 40rem;
-  height: auto;
-  border-radius: 15px;
-  border: 5px solid black; }
-
-.section__first div {
-  padding: 1vw; }
+.intro {
+  display: flex;
+  align-items: center;
+  width: 55vw;
+  height: fit-content;
+  overflow: hidden; }
+  .intro video {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    border: 5px solid black;
+    overflow: hidden; }
 
 /* DIV DONDE SE ENCUENTRA EL H2 Y EL P */
 .content {
-  width: 35vw;
+  width: 30vw;
+  height: min-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   color: #F5F3F4;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 /* H2 DE LA PRIMERA SECCION */
 .title {
   margin: 0;
-  font-size: 7vh;
-  width: fit-content; }
+  font-size: 3vw;
+  text-align: center;
+  width: fit-content;
+  overflow: hidden; }
 
 .text {
   color: #F5F3F4;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.4rem;
+  overflow: hidden; }
 
 /* ##################COMIENZO DE LA 2DA SECCION DEL MAIN INDEX################################## */
 .section2 {
@@ -385,15 +395,17 @@ footer {
     width: 90vw;
     height: max-content;
     margin-top: 5vh; }
-  .intro video {
-    width: 85vw;
-    height: auto; }
+  .intro {
+    width: 85vw; }
+    .intro video {
+      width: 85vw;
+      height: auto; }
   .text {
     color: #F5F3F4;
     text-align: center;
     font-size: 1rem; }
   .content {
-    width: fit-content;
+    width: 85vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -403,7 +415,7 @@ footer {
     margin: 0; }
   .title {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: fit-content; }
   .section2 {
     display: flex;
@@ -451,6 +463,32 @@ footer {
     height: auto;
     display: block;
     margin-bottom: 3vh; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    font-size: 3vw; }
+  .text {
+    font-size: 1.7vw; }
+  .section__first {
+    height: min-content; } }
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .section__first {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: max-content;
+    margin-top: 5vh; }
+  .intro {
+    width: 80vw; }
+  .content {
+    width: 80vw;
+    margin-top: 2vh; }
+  .title {
+    font-size: 4vw; }
+  .text {
+    font-size: 2.7vw; } }
 
 /* .CSS DE COMBOS */
 /* ##########################COMBOS#################################### */
@@ -696,6 +734,11 @@ footer {
   font-weight: 500;
   font-size: 2.5rem; }
 
+.item9 {
+  overflow: hidden; }
+  .item9 p {
+    font-size: 1.6rem; }
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .products div {
@@ -711,6 +754,14 @@ footer {
   .products .item9 p {
     font-size: 1.5rem; }
   .products .item14 p {
+    font-size: 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products .item9 p {
+    font-size: 1.5rem; } }
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .products .item9 p {
     font-size: 1.5rem; } }
 
 /* .CSS DE CONTACTO */
@@ -808,22 +859,24 @@ section h2 {
   border-radius: 015px;
   margin-bottom: 5vh;
   margin-top: 10vh; }
-
-.aboutus img {
-  width: 45vw;
-  height: auto;
-  border-radius: 15px; }
+  .aboutus img {
+    width: 45vw;
+    height: auto;
+    border-radius: 15px; }
 
 .aboutus__text {
   text-align: center;
-  color: #F5F3F4; }
+  color: #F5F3F4;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
 .aboutus__text .p {
   width: 35vw;
   text-align: justify; }
 
 .aboutus__text h2 {
-  font-size: 50px; }
+  font-size: 3.8vw; }
 
 .section__carousel {
   display: flex;
@@ -849,6 +902,8 @@ section h2 {
   .aboutus img {
     height: auto;
     width: 85vw; }
+  .aboutus__text h2 {
+    font-size: 7vw; }
   .section__aboutus {
     display: flex;
     justify-content: center;
@@ -868,6 +923,20 @@ section h2 {
     align-items: center;
     width: 90vw;
     height: 80vh; } }
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .aboutus {
+    flex-direction: column; }
+    .aboutus img {
+      height: auto;
+      width: 85vw; }
+  .aboutus__text h2 {
+    font-size: 7vw; }
+  .aboutus__text {
+    width: 85vw; }
+    .aboutus__text .p {
+      width: 85vw;
+      text-align: center; } }
 
 /* SELECTORES GENERALES */
 * {

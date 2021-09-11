@@ -12,16 +12,16 @@
 }
 .section__first {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 95vw;
+    height: fit-content;
     margin-top: 15vh;
     flex-wrap: wrap;
     padding: 15px 0 15px;
     background-color: $target-color;
-    width: fit-content;
     border-radius: 15px;
     transition: all 0.3s;
     align-items: center;
-
 }
   
 .section__first:hover {
@@ -31,22 +31,25 @@
 }
 
 .intro {
+    display: flex;
+    align-items: center;
+    width: 55vw;
+    height: fit-content;
+    overflow: hidden;
     video {
-        width: 40rem;
-        height: auto;
+        height: fit-content;
+        width: fit-content;
         border-radius: 15px;
         border: 5px solid black;
+        overflow: hidden;
     }
 }
 
-.section__first {
-    div {
-    padding: 1vw;
-    }
-}
+
 /* DIV DONDE SE ENCUENTRA EL H2 Y EL P */
 .content {
-    width: 35vw ;
+    width: 30vw;
+    height: min-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -54,19 +57,22 @@
     text-align: center;
     color: $letter-color;
     margin: 0;
+    overflow: hidden;
 } 
 /* H2 DE LA PRIMERA SECCION */
 .title {
     margin: 0;
-    font-size: 7vh;
+    font-size: 3vw;
+    text-align: center;
     width: fit-content;
-    
+    overflow: hidden;
 }
-
 .text {
     color: $letter-color;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+
 }
 
 
@@ -181,6 +187,7 @@
     }
 
     .intro {
+        width: 85vw;
         video {
             width: 85vw;
             height: auto;
@@ -194,7 +201,7 @@
     }
     
     .content {
-        width: fit-content ;
+        width: 85vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -206,7 +213,7 @@
     
     .title {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.8rem;
         width: fit-content;
         
     }
@@ -282,5 +289,40 @@
     } 
 } 
 
+@media (min-width: 768px) and (max-width: 1023px) {
+        .title {
+            font-size: 3vw;
+        }
 
-      
+        .text {
+            font-size: 1.7vw;
+        }
+        .section__first {
+            height: min-content;
+        }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .section__first {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: max-content;
+        margin-top: 5vh;
+    }
+    .intro {
+        width: 80vw;
+    }
+    .content {
+        width: 80vw;
+        margin-top: 2vh;
+    }
+    .title {
+        font-size: 4vw;
+    }
+
+    .text {
+        font-size: 2.7vw;
+    }
+}
