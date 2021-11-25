@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/wow.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -41,7 +41,12 @@
                     <a class="nav-item nav-link active" href="productos.html">Productos</a>
                     <a class="nav-item nav-link" href="combos.html">Combos</a>
                     <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-                    <a class="nav-item nav-link" href="sobrenosotros.html">Mi Carrito</a>
+                    <div class="carritoNavDiv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-left-fill flechaCarrito" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                          </svg>
+                    <a class="nav-item nav-link carritoLink" href="#">Mi Carrito</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -57,97 +62,101 @@
             <div class="item1 wow animate__animated " id="salsacriolla" data-id="1">
                 <p class="nameProduct">Salsa Criolla</p>
                 <span class="animate__animated">Porción de 200g:
-                    <b class="productPrice">$250</b>
+                    $<b class="productPrice">250</b>
                 </span>
                 <button type="button" class="btn btn-primary animate__animated btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item2 wow animate__animated " data-id="2">
                 <p class="nameProduct">Chorizos</p> 
-                    <span class="animate__animated">Unidad: <b class="productPrice">$150</b></span>
+                    <span class="animate__animated">Unidad: $<b class="productPrice">150</b></span>
                     <button type="button"class="btn btn-primary animate__animated  btnAddCart" id="chorizos">Añadir al carrito</button>
             </div>
 
             <div class="item3 wow animate__animated" data-id="3">
                 <p class="nameProduct">Lechón</p> 
-                    <span class="animate__animated">Porción para 1: <b class="productPrice">$350</b></span> <button type="button"
+                    <span class="animate__animated">Porción para 1: $<b class="productPrice">350</b></span> <button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="lechón">Añadir al carrito</button>
             </div>
 
             <div class="item4 wow animate__animated" data-id="4">
-                <p class="nameProduct">Vacío</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$250</b></span><button type="button"
+                <p class="nameProduct">Vacío</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="vacío">Añadir al carrito</button>
             </div>
 
             <div class="item5 wow animate__animated" data-id="5">
-                <p class="nameProduct">Costillar</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$300</b></span><button type="button"
+                <p class="nameProduct">Costillar</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">300</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="costillar">Añadir al carrito</button>
             </div>
 
             <div class="item6 wow animate__animated" data-id="6">
-                <p class="nameProduct">Ensalada Rusa</p> <span class="animate__animated">Porción de 500g: <b class="productPrice">$400</b></span><button type="button"
+                <p class="nameProduct">Ensalada Rusa</p> <span class="animate__animated">Porción de 500g: $<b class="productPrice">400</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="ensaladarusa">Añadir al carrito</button>
             </div>
 
             <div class="item7 wow animate__animated" data-id="7">
-                <p class="nameProduct">Entraña</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$250</b></span><button type="button"
+                <p class="nameProduct">Entraña</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="entraña">Añadir al carrito</button>
             </div>
 
             <div class="item8 wow animate__animated" data-id="8">
-                <p class="nameProduct">Tapa de Asado</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$250</b></span><button type="button"
+                <p class="nameProduct">Tapa de Asado</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart" id="tapaasado">Añadir al carrito</button>
             </div>
 
             <div class="item9 wow animate__animated" data-id="9">
-                <p class="nameProduct">Ensalada de Tomate y Lechuga</p> <span class="animate__animated">Porción de 500g: <b class="productPrice">$300</b></span><button
+                <p class="nameProduct">Ensalada de Tomate y Lechuga</p> <span class="animate__animated">Porción de 500g: $<b class="productPrice">300</b></span><button
                     type="button" class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item10 wow animate__animated" data-id="10">
-                <p class="nameProduct">Matambre</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$300</b></span><button type="button"
+                <p class="nameProduct">Matambre</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">300</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item11 wow animate__animated" data-id="11">
-                <p class="nameProduct">Pollo Asado</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$200</b></span><button type="button"
+                <p class="nameProduct">Pollo Asado</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">200</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item12 wow animate__animated" data-id="12">
-                <p class="nameProduct">Costillas de Cerdo</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$250</b></span><button
+                <p class="nameProduct">Costillas de Cerdo</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button
                     type="button" class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item13 wow animate__animated" data-id="13">
-                <p class="nameProduct">Bife de Chorizo</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$350</b></span><button type="button"
+                <p class="nameProduct">Bife de Chorizo</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">350</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item14 wow animate__animated" data-id="14">
-                <p class="nameProduct">Chinchulines</p> <span class="animate__animated">Unidad: <b class="productPrice">$75</b></span><button type="button"
+                <p class="nameProduct">Chinchulines</p> <span class="animate__animated">Unidad: $<b class="productPrice">75</b></span><button type="button"
                     class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
             <div class="item15 wow animate__animated" data-id=""15>
-                <p class="nameProduct">Costillas de Vaca</p> <span class="animate__animated">Porción para 1: <b class="productPrice">$250</b></span><button
+                <p class="nameProduct">Costillas de Vaca</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button
                     type="button" class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
         </section>
-        <section id="main-carrito" class="menu-carrito">
-            <table class="table table-hover tablaCarrito">
-                <thead>
-                    <tr>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
-                        <!-- <th scope="col">Total</th> -->
-                    </tr>
-                </thead>
-                <tbody class="tbodyCarrito" id="tablaCarrito">
-                </tbody>
-            </table>
-        </section>
+        <div class="menu-carrito">
+            <div class="menu-carrito__header">
+                <div class="carrito-header__element">Cantidad</div>
+                <div class="carrito-header__element product_element">Producto</div>
+                <div class="carrito-header__element">Precio</div>
+            </div>
+            <div class="menu-carrito__body" id="tablaCarrito">
+                <!-- ELEMENTOS A INSERTAR DESDE JS -->
+            </div>
+            <div class="menu-carrito__footer">
+                <div class="carrito-footer__text">Total:</div>
+                <div class="carrito-footer__element"></div>
+            </div>
+        </div>
+
+
+        
+
     </main>
     <footer>
         <ul class="socialMedia">

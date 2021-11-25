@@ -19,11 +19,12 @@ class Carrito {
      }
      
      insertarCarrito(producto) {
-         const rowProduct = document.createElement('tr');
+         const rowProduct = document.createElement('div');
+         rowProduct.classList.add('carrito-body-element');
          rowProduct.innerHTML = `
-         <td>${producto.amount}</td>
-         <td>${producto.name}</td>
-         <td>${producto.price}</td>
+        <div class="producto-amount">${producto.amount}</div>
+        <div class="producto-name">${producto.name}</div>
+        <div class="producto-price">$${producto.price}</div>
          `;
          tablaCarrito.appendChild(rowProduct);
      }
