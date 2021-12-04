@@ -20,6 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/wow.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -41,11 +42,7 @@
                     <a class="nav-item nav-link active" href="productos.html">Productos</a>
                     <a class="nav-item nav-link" href="combos.html">Combos</a>
                     <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-                    <div class="carritoNavDiv">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-left-fill flechaCarrito" viewBox="0 0 16 16">
-                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                          </svg>
-                    <a class="nav-item nav-link carritoLink" href="#">Mi Carrito</a>
+                    <a class="nav-item nav-link carritoLink" href="sobrenosotros.html">Mi Carrito</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +56,7 @@
     <main id="main-products">
         <section class="products" id="products">
             <!-- Sección Productos -->
-            <div class="item1 wow animate__animated " id="salsacriolla" data-id="1">
+            <div class="item1 wow animate__animated" data-id="1">
                 <p class="nameProduct">Salsa Criolla</p>
                 <span class="animate__animated">Porción de 200g:
                     $<b class="productPrice">250</b>
@@ -67,7 +64,7 @@
                 <button type="button" class="btn btn-primary animate__animated btnAddCart">Añadir al carrito</button>
             </div>
 
-            <div class="item2 wow animate__animated " data-id="2">
+            <div class="item2 wow animate__animated" data-id="2">
                 <p class="nameProduct">Chorizos</p> 
                     <span class="animate__animated">Unidad: $<b class="productPrice">150</b></span>
                     <button type="button"class="btn btn-primary animate__animated  btnAddCart" id="chorizos">Añadir al carrito</button>
@@ -134,7 +131,7 @@
                     class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
 
-            <div class="item15 wow animate__animated" data-id=""15>
+            <div class="item15 wow animate__animated" data-id="15">
                 <p class="nameProduct">Costillas de Vaca</p> <span class="animate__animated">Porción para 1: $<b class="productPrice">250</b></span><button
                     type="button" class="btn btn-primary animate__animated  btnAddCart">Añadir al carrito</button>
             </div>
@@ -149,14 +146,12 @@
                 <!-- ELEMENTOS A INSERTAR DESDE JS -->
             </div>
             <div class="menu-carrito__footer">
-                <div class="carrito-footer__text">Total:</div>
+                <a href="sobrenosotros.html"><button type="button" class="btn btn-primary btn-irCarrito btn-sm">Terminar Compra</button></a> 
+                <button type="button" class="btn btn-danger btn-vaciarCarrito btn-sm" id="btn-vaciarCarrito">Vaciar Carrito</button>
+                <div class="carrito-footer__text">Subtotal:</div>
                 <div class="carrito-footer__element"></div>
             </div>
         </div>
-
-
-        
-
     </main>
     <footer>
         <ul class="socialMedia">

@@ -271,26 +271,35 @@
     div{
         overflow-y: hidden;
         margin: 3px 0px 3px 5px;
-
+        display: flex;
+        align-items: center;
     }
 }
+
 .menu-carrito__body{
     display: flex;
     overflow-y: scroll;
     justify-content: flex-start;
     flex-direction: column;
-    height: 85%;
+    height: 80%;
     padding: 0 4% 0 3%;
     div{
         height: 40px;
         min-height: 40px;
         overflow-y: hidden;
+        .eliminar-elemento{
+            color: $letter-color;
+            margin-right: 10px;
+            z-index: 100000;
+        }
     }
 }
 
 .menu-carrito__footer{
     display: flex;
     padding: 0 4% 0 3%;
+    height: 10%;
+    align-items: center;
     .carrito-footer__text{
         flex-grow: 1;
         text-align: right;
@@ -300,6 +309,17 @@
     }
     .carrito-footer__element {
         width: 15%;
+    }
+}
+.btn-irCarrito,.btn-vaciarCarrito {
+    margin-top:0 !important;
+    margin-right: 1rem;
+    height: min-content;
+}
+.btn-irCarrito{
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 /* width */
@@ -337,7 +357,9 @@
     flex-grow: 2;
 }
 
-
+.bi-cart-x-fill {
+    cursor: pointer;
+}
 
 
 .carritoNavDiv {

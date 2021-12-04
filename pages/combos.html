@@ -15,6 +15,7 @@
     <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/wow.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
@@ -45,32 +46,50 @@
 </div>
 </header>
     <main>
-        <section class="combos">    
-            <div class="combo1 wow animate__animated animate__slideInLeft">
-                <h2>Parrillada para 5 personas</h2>
+        <section class="combos" id="products">    
+            <div class="combo1 wow animate__animated animate__slideInLeft" data-id="16">
+                <h2 class="nameProduct">Parrillada para 5 personas</h2>
                 <p>Matambre de vaca, costillas de vaca, 5 chorizos parrilleros, ensalada mixta.</p>
-                <p>$1500</p>
-                <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                <p>$<b class="productPrice">1500</b></p>                
+                <button type="button" class="btn btn-primary btnAddCart" id="btnCombo">Añadir al carrito</button>
             </div>       
-            <div class="combo2 wow animate__animated animate__slideInRight">               
-                <h2>Asado con achuras para 4 personas</h2>
+            <div class="combo2 wow animate__animated animate__slideInRight" data-id="17">               
+                <h2 class="nameProduct">Asado con achuras para 4 personas</h2>
                 <p>Vacío, Chinchulines, Mollejas, Tripa Gorda.</p>
-                <p>$1250</p>
-                <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                <p>$<b class="productPrice">1250</b></p>
+                <button type="button" class="btn btn-primary btnAddCart">Añadir al carrito</button>
             </div>
-            <div class="combo3 wow animate__animated animate__slideInLeft">           
-                <h2>Pollo con verduras para 3 personas</h2>
+            <div class="combo3 wow animate__animated animate__slideInLeft" data-id="18">           
+                <h2 class="nameProduct">Pollo con verduras para 3 personas</h2>
                 <p>Pollo entero asado, morron con huevo a la parrilla, cebolla, calabaza y batata asada.</p>
-                <p>$1000</p>
-                <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                <p>$<b class="productPrice">1000</b></p>
+                <button type="button" class="btn btn-primary btnAddCart">Añadir al carrito</button>
             </div>
-            <div class="combo4 wow animate__animated animate__slideInRight">                
-                <h2>Combo lechón</h2>
+            <div class="combo4 wow animate__animated animate__slideInRight" data-id="19">                
+                <h2 class="nameProduct">Combo lechón</h2>
                 <p>Lechón asado con ensalada rusa.</p>
-                <p>$2000</p>
-                <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                <p>$<b class="productPrice">2000</b></p>
+                <button type="button" class="btn btn-primary btnAddCart">Añadir al carrito</button>
             </div>
         </section>
+
+
+        <div class="menu-carrito">
+            <div class="menu-carrito__header">
+                <div class="carrito-header__element">Cantidad</div>
+                <div class="carrito-header__element product_element">Producto</div>
+                <div class="carrito-header__element">Precio</div>
+            </div>
+            <div class="menu-carrito__body" id="tablaCarrito">
+                <!-- ELEMENTOS A INSERTAR DESDE JS -->
+            </div>
+            <div class="menu-carrito__footer">
+                <a href="sobrenosotros.html"><button type="button" class="btn btn-primary btnAddCart btn-irCarrito btn-sm">Terminar Compra</button></a> 
+                <button type="button" class="btn btn-danger btn-vaciarCarrito btn-sm" id="btn-vaciarCarrito">Vaciar Carrito</button>
+                <div class="carrito-footer__text">Subtotal:</div>
+                <div class="carrito-footer__element"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <ul class="socialMedia">
@@ -97,5 +116,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     <script> new WOW().init(); </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
 </body>
 </html>
